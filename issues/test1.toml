@@ -2,7 +2,7 @@ title = "New column added in database with a default value"
 severity = "major"
 category = "performance"
 description = """
-Dmeo issue.
+Drmo issue.
 The prefered way is to add a new DB column with `null=True` because it will be created instantly and then possibly populate the table with the desired default values. Adding a default value will lead to a performance issue if the existing table has a large number of rows.
 """
 recommended = true
