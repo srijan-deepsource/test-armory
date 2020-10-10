@@ -1,0 +1,11 @@
+name: issue-validator
+
+on: [push]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: srijan-deepsource/armory@master
